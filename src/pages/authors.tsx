@@ -9,9 +9,9 @@ type Props = {
 const Component: React.FC<Props> = ({ data }) => (
   <div>
     <h1>Authors</h1>
-    {data.site.siteMetadata.authors.map(
+    {data.site?.siteMetadata?.authors?.map(
       (author) =>
-        author.slug && (
+        author?.slug && (
           <li key={author.slug}>
             <Link to={`/authors/${author.slug}`}>{author.name}</Link>
           </li>

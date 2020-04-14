@@ -14,7 +14,7 @@ const Component: React.FC<IndexPageProps> = ({ data }) => (
     <div>
       <h1>Hi people</h1>
       <p>
-        Welcome to your new <strong>{data.site.siteMetadata.title}</strong>{' '}
+        Welcome to your new <strong>{data.site?.siteMetadata?.title}</strong>{' '}
         site.
       </p>
       <p>Now go build something great.</p>
