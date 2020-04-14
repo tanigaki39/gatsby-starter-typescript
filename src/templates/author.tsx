@@ -1,11 +1,13 @@
 import * as React from 'react'
 import { AuthorPageContext } from '../../gatsby-node/createAuthorPages'
 import { Link } from 'gatsby'
-
+// ______________________________________________________
+//
 type Props = {
   pageContext: AuthorPageContext
 }
-
+// ______________________________________________________
+//
 const Component: React.FC<Props> = ({ pageContext }) => (
   <div>
     <h1>Author</h1>
@@ -18,5 +20,6 @@ const Component: React.FC<Props> = ({ pageContext }) => (
     </p>
   </div>
 )
-
+// ______________________________________________________
+//
 export default Component

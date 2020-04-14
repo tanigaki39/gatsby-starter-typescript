@@ -1,11 +1,13 @@
 import * as React from 'react'
 import { Link, graphql } from 'gatsby'
 import { AuthorsQuery } from '../../types/graphql-types'
-
+// ______________________________________________________
+//
 type Props = {
   data: AuthorsQuery
 }
-
+// ______________________________________________________
+//
 const Component: React.FC<Props> = ({ data }) => (
   <div>
     <h1>Authors</h1>
@@ -22,7 +24,8 @@ const Component: React.FC<Props> = ({ data }) => (
     </p>
   </div>
 )
-
+// ______________________________________________________
+//
 export const pageQuery = graphql`
   query Authors {
     site {
@@ -35,5 +38,6 @@ export const pageQuery = graphql`
     }
   }
 `
-
+// ______________________________________________________
+//
 export default Component

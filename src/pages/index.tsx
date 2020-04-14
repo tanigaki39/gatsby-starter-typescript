@@ -2,13 +2,13 @@ import * as React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../layouts/index'
 import { IndexPageQuery } from '../../types/graphql-types'
-
-// Please note that you can use https://github.com/dotansimha/graphql-code-generator
-// to generate all types from graphQL schema
+// ______________________________________________________
+//
 interface IndexPageProps {
   data: IndexPageQuery
 }
-
+// ______________________________________________________
+//
 const Component: React.FC<IndexPageProps> = ({ data }) => (
   <Layout>
     <div>
@@ -25,7 +25,8 @@ const Component: React.FC<IndexPageProps> = ({ data }) => (
     </div>
   </Layout>
 )
-
+// ______________________________________________________
+//
 export const pageQuery = graphql`
   query IndexPage {
     site {
@@ -35,5 +36,6 @@ export const pageQuery = graphql`
     }
   }
 `
-
+// ______________________________________________________
+//
 export default Component

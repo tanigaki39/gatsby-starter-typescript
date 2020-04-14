@@ -2,10 +2,14 @@ import * as React from 'react'
 import Helmet from 'react-helmet'
 import Header from '../components/header'
 import './index.css'
-
-const DefaultLayout: React.FC = (props) => (
+// ______________________________________________________
+//
+const Component: React.FC = (props) => (
   <div>
-    <Helmet title="自分のやつ" />
+    <Helmet
+      title="Default title"
+      meta={[{ name: 'description', content: 'Default description' }]}
+    />
     <Header />
     <div
       style={{
@@ -19,5 +23,6 @@ const DefaultLayout: React.FC = (props) => (
     </div>
   </div>
 )
-
-export default DefaultLayout
+// ______________________________________________________
+//
+export default Component
